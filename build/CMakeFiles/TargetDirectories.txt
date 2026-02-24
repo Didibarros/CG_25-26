@@ -1,0 +1,6 @@
+/home/helder/Documents/CG/Lab work assignment (componente laboratorial)/projecto/build/CMakeFiles/tinyxml.dir
+/home/helder/Documents/CG/Lab work assignment (componente laboratorial)/projecto/build/CMakeFiles/common.dir
+/home/helder/Documents/CG/Lab work assignment (componente laboratorial)/projecto/build/CMakeFiles/generator.dir
+/home/helder/Documents/CG/Lab work assignment (componente laboratorial)/projecto/build/CMakeFiles/engine.dir
+/home/helder/Documents/CG/Lab work assignment (componente laboratorial)/projecto/build/CMakeFiles/edit_cache.dir
+/home/helder/Documents/CG/Lab work assignment (componente laboratorial)/projecto/build/CMakeFiles/rebuild_cache.dir

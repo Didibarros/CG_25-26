@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcommon.a CMakeFiles/common.dir/common/src/model.cpp.o CMakeFiles/common.dir/common/src/point.cpp.o CMakeFiles/common.dir/common/src/state.cpp.o CMakeFiles/common.dir/common/src/utils.cpp.o
+/usr/bin/ranlib libcommon.a
