@@ -1,1 +1,0 @@
-/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/xml-test.dir/link.d "CMakeFiles/xml-test.dir/libs/tinyxml2/tinyxml2.cpp.o" "CMakeFiles/xml-test.dir/libs/tinyxml2/xmltest.cpp.o" -o xml-test

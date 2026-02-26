@@ -1,6 +1,6 @@
-/home/helder/Documents/CG/Lab work assignment (componente laboratorial)/projecto/build/CMakeFiles/tinyxml.dir
-/home/helder/Documents/CG/Lab work assignment (componente laboratorial)/projecto/build/CMakeFiles/common.dir
-/home/helder/Documents/CG/Lab work assignment (componente laboratorial)/projecto/build/CMakeFiles/generator.dir
-/home/helder/Documents/CG/Lab work assignment (componente laboratorial)/projecto/build/CMakeFiles/engine.dir
-/home/helder/Documents/CG/Lab work assignment (componente laboratorial)/projecto/build/CMakeFiles/edit_cache.dir
-/home/helder/Documents/CG/Lab work assignment (componente laboratorial)/projecto/build/CMakeFiles/rebuild_cache.dir
+C:/Users/luise/Downloads/CG_25-26/build/CMakeFiles/tinyxml.dir
+C:/Users/luise/Downloads/CG_25-26/build/CMakeFiles/common.dir
+C:/Users/luise/Downloads/CG_25-26/build/CMakeFiles/generator.dir
+C:/Users/luise/Downloads/CG_25-26/build/CMakeFiles/engine.dir
+C:/Users/luise/Downloads/CG_25-26/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/luise/Downloads/CG_25-26/build/CMakeFiles/ZERO_CHECK.dir

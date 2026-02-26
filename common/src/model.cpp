@@ -232,15 +232,36 @@ void Model::generateSphere(float radius, int slices, int stacks) {
 	this->vertices.push_back(std::make_unique<Vertex>(0.0f, radius, 0.0f));
 	this->vertices.push_back(std::make_unique<Vertex>(0.0f, -radius, 0.0f));
 	const int middle_vertices = stacks - 1; // por stack
-	for(int slice = 0; slice < slices; slice++) {
+	for (int slice = 0; slice < slices; slice++) {
 		const float alpha = ((2 * M_PI) / slices) * slice;
-		int current = 2 + middle_verticess * slice;
+		int current = 2 + middle_vertices * slice;
 		if (slice == slices - 1) { this->pushTriangle(current, 2, 0); }
 		else { this->pushTriangle(current, current + middle_vertices, 0); }
-		for(int stack = 1; stack < stacks; stack++) {
+		for (int stack = 1; stack < stacks; stack++) {
 			current++;
-			const float beta = (M_PI / 2) - ((M_PI * slice)/slices);
-			float z = radius * cos(beta) * cos(alpha), x = radius * cos(beta) * sin(alpha), radius * sin(beta);
+			const float beta = (M_PI / 2) - ((M_PI * slice) / slices);
+			float z = radius * cos(beta) * cos(alpha), x = radius * cos(beta) * sin(alpha), y= radius * sin(beta);
 		}
 	}
+}
+
+void Model::writeToFile(const std::string& filename) {
+	std::ofstream file(filename);
+	if (!file.is_open()) {
+		std::cerr << "Error: Could not open file " << filename << " for writing.\n";
+		return;
+	}
+	
+	const int numTriangles = this->triangles.size() / 3;
+	file << this->vertices.size() << ',' << numTriangles << '\n';
+	
+	for (const auto& vertex : this->vertices) {
+		file << vertex->x << ',' << vertex->y << ',' << vertex->z << '\n';
+	}
+	
+	for (size_t i = 0; i < this->triangles.size(); i += 3) {
+		file << this->triangles[i] << ',' << this->triangles[i + 1] << ',' << this->triangles[i + 2] << '\n';
+	}
+	
+	file.close();
 }

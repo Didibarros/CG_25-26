@@ -1,0 +1,10 @@
+^C:\USERS\LUISE\DOWNLOADS\CG_25-26\BUILD\CMAKEFILES\71AA5D325CE915528C659F9DAD3423BC\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/luise/Downloads/CG_25-26 -BC:/Users/luise/Downloads/CG_25-26/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/luise/Downloads/CG_25-26/build/gc_laboratorial.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

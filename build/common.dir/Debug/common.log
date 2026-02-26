@@ -1,0 +1,14 @@
+﻿  Building Custom Rule C:/Users/luise/Downloads/CG_25-26/CMakeLists.txt
+  model.cpp
+C:\Users\luise\Downloads\CG_25-26\common\src\model.cpp(205,45): warning C4244: 'inicializando': conversão de 'double' para 'float', possível perda de dados
+C:\Users\luise\Downloads\CG_25-26\common\src\model.cpp(205,21): warning C4244: 'inicializando': conversão de 'double' para 'const float', possível perda de dados
+C:\Users\luise\Downloads\CG_25-26\common\src\model.cpp(236,45): warning C4244: 'inicializando': conversão de 'double' para 'float', possível perda de dados
+C:\Users\luise\Downloads\CG_25-26\common\src\model.cpp(236,21): warning C4244: 'inicializando': conversão de 'double' para 'const float', possível perda de dados
+C:\Users\luise\Downloads\CG_25-26\common\src\model.cpp(242,34): warning C4244: 'inicializando': conversão de 'double' para 'float', possível perda de dados
+C:\Users\luise\Downloads\CG_25-26\common\src\model.cpp(242,21): warning C4244: 'inicializando': conversão de 'double' para 'const float', possível perda de dados
+  point.cpp
+  state.cpp
+  utils.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ranges(11): warning STL4038: The contents of <ranges> are available only with C++20 or later.
+  Gerando Código...
+  common.vcxproj -> C:\Users\luise\Downloads\CG_25-26\build\Debug\common.lib

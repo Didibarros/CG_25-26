@@ -26,6 +26,7 @@ add_library(common STATIC ${COMMON_SOURCES}
 		common/src/state.cpp
 )
 target_include_directories(common PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/common/include )
+target_link_libraries(common PUBLIC tinyxml)
 
 # Generator
 file(GLOB GENERATOR_SOURCES generator/src/*.cpp )
@@ -36,6 +37,10 @@ target_include_directories(generator PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/generat
 file(GLOB ENGINE_SOURCES engine/src/*.cpp )
 add_executable(engine ${ENGINE_SOURCES} )
 target_include_directories(engine PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/engine/include )
+target_link_libraries(engine ${OPENGL_LIBRARIES} ${TOOLKITS_FOLDER}/glut/glut32.lib common tinyxml)
+
+# Generator também precisa do common
+target_link_libraries(generator common)
 
 find_package(OpenGL REQUIRED)
 include_directories(${OpenGL_INCLUDE_DIRS})
@@ -82,6 +87,11 @@ else (WIN32) #Linux and Mac
 	endif(NOT GLUT_FOUND)
 	
 endif(WIN32)
+
+
+
+
+
 
 
 

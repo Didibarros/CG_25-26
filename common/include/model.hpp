@@ -17,6 +17,7 @@ struct Model
 	void generateBox(float dimension, int divisions);
 	void generateCone(float radius, float height, int slices, int stacks);
 	void generateSphere(float radius, int slices, int stacks);
+	void writeToFile(const std::string& filename);
 };
 
 #endif
